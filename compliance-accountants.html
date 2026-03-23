@@ -1,0 +1,3698 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compliance Accountants | Financial Integrity & Precision</title>
+    <meta
+      name="description"
+      content="Expert accounting, bookkeeping, VAT and corporate tax compliance for UAE SMEs. FTA registered tax agents. Dubai, Abu Dhabi, all Emirates."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --white: #ffffff;
+        --grey-50: #f7faf8;
+        --grey-100: #eff4f1;
+        --grey-200: #e2ebe5;
+        --grey-300: #c4d5ca;
+        --grey-400: #8ca898;
+        --grey-600: #486056;
+        --grey-800: #1c2b24;
+        --black: #0d1a13;
+        --em: #0a6640;
+        --em-mid: #0d8a55;
+        --em-light: #12b06c;
+        --em-pale: #e5f4ec;
+        --gold: #b8893a;
+        --gold-lt: #d4a855;
+        --gold-pale: #fdf3e3;
+        --border: #dce8e0;
+        --border-em: rgba(10, 102, 64, 0.18);
+        --sh-sm: 0 2px 12px rgba(13, 26, 19, 0.07);
+        --sh-md: 0 8px 32px rgba(13, 26, 19, 0.1);
+        --sh-lg: 0 20px 60px rgba(13, 26, 19, 0.14);
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background: var(--white);
+        color: var(--black);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        cursor: none;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      /* CURSOR */
+      .cur {
+        width: 8px;
+        height: 8px;
+        background: var(--em);
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+      }
+      .cur-r {
+        width: 32px;
+        height: 32px;
+        border: 1.5px solid var(--em);
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 9998;
+        transform: translate(-50%, -50%);
+        transition: all 0.13s ease;
+        opacity: 0.5;
+      }
+
+      /* UTILITY */
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 48px;
+      }
+      .label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: var(--em);
+      }
+      .label::before {
+        content: "";
+        width: 18px;
+        height: 1.5px;
+        background: var(--em);
+      }
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(30px, 3.5vw, 50px);
+        font-weight: 600;
+        line-height: 1.1;
+        color: var(--black);
+        margin-top: 14px;
+      }
+      h2 em {
+        font-style: italic;
+        color: var(--em);
+      }
+      .lead {
+        font-size: 15px;
+        line-height: 1.8;
+        color: var(--grey-600);
+        max-width: 500px;
+        margin-top: 14px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 13px 30px;
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        transition: all 0.25s;
+        border-radius: 5px;
+      }
+      .btn-g {
+        background: var(--em);
+        color: #fff;
+        box-shadow: 0 4px 14px rgba(10, 102, 64, 0.25);
+      }
+      .btn-g:hover {
+        background: var(--em-mid);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 22px rgba(10, 102, 64, 0.3);
+      }
+      .btn-o {
+        background: transparent;
+        color: var(--em);
+        border: 1.5px solid var(--em);
+      }
+      .btn-o:hover {
+        background: var(--em);
+        color: #fff;
+      }
+      .btn-gold {
+        background: var(--gold);
+        color: #fff;
+        box-shadow: 0 4px 14px rgba(184, 137, 58, 0.25);
+      }
+      .btn-gold:hover {
+        background: var(--gold-lt);
+        transform: translateY(-2px);
+      }
+      .btn-ghost {
+        background: transparent;
+        color: #fff;
+        border: 1.5px solid rgba(255, 255, 255, 0.35);
+      }
+      .btn-ghost:hover {
+        border-color: #fff;
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .sec {
+        padding: 96px 0;
+      }
+      .sec-alt {
+        background: var(--grey-50);
+      }
+
+      /* NAV */
+      #nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 900;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--border);
+        transition: box-shadow 0.3s;
+      }
+      #nav.up {
+        box-shadow: var(--sh-md);
+      }
+      .nav-in {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 48px;
+        height: 70px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+      }
+      .logo-sq {
+        width: 38px;
+        height: 38px;
+        background: var(--em);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 6px;
+        font-family: "Playfair Display", serif;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
+      }
+      .logo-tx {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+      }
+      .logo-tx strong {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--black);
+        letter-spacing: 0.2px;
+      }
+      .logo-tx small {
+        font-size: 9px;
+        font-weight: 600;
+        color: var(--em);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-top: 3px;
+      }
+      .nav-ul {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        list-style: none;
+      }
+      .nav-ul a {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--grey-600);
+        padding: 7px 13px;
+        border-radius: 5px;
+        transition: all 0.2s;
+      }
+      .nav-ul a:hover {
+        color: var(--em);
+        background: var(--em-pale);
+      }
+      .nav-ul .cta {
+        background: var(--em);
+        color: #fff !important;
+        padding: 9px 20px;
+        margin-left: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        box-shadow: 0 2px 10px rgba(10, 102, 64, 0.2);
+      }
+      .nav-ul .cta:hover {
+        background: var(--em-mid) !important;
+      }
+      .hbg {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 5px;
+        background: none;
+        border: none;
+      }
+      .hbg span {
+        width: 22px;
+        height: 2px;
+        background: var(--black);
+        border-radius: 2px;
+        display: block;
+        transition: all 0.3s;
+      }
+      .drawer {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 850;
+        background: #fff;
+        flex-direction: column;
+        padding: 86px 40px 40px;
+      }
+      .drawer.on {
+        display: flex;
+      }
+      .drawer a {
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--black);
+        padding: 13px 0;
+        border-bottom: 1px solid var(--border);
+        transition: color 0.2s;
+      }
+      .drawer a:hover {
+        color: var(--em);
+      }
+      .d-close {
+        position: absolute;
+        top: 22px;
+        right: 28px;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--black);
+      }
+
+      /* HERO */
+      #hero {
+        padding: 140px 0 88px;
+        background: var(--white);
+        position: relative;
+        overflow: hidden;
+      }
+      .h-shape {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 52%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          var(--grey-50) 0%,
+          var(--em-pale) 100%
+        );
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+        z-index: 0;
+      }
+      .h-dots {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 52%;
+        height: 100%;
+        background-image: radial-gradient(
+          circle,
+          rgba(10, 102, 64, 0.13) 1px,
+          transparent 1px
+        );
+        background-size: 26px 26px;
+        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%);
+        z-index: 1;
+      }
+      .hero-in {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 56px;
+        align-items: center;
+      }
+      .h-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--em-pale);
+        color: var(--em);
+        border: 1px solid var(--border-em);
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 7px 16px;
+        border-radius: 100px;
+        margin-bottom: 26px;
+      }
+      .h-pill::before {
+        content: "✦";
+        font-size: 8px;
+      }
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(38px, 4.5vw, 62px);
+        font-weight: 700;
+        line-height: 1.07;
+        color: var(--black);
+        margin-bottom: 22px;
+      }
+      h1 em {
+        font-style: italic;
+        color: var(--em);
+      }
+      h1 .gld {
+        color: var(--gold);
+      }
+      .h-sub {
+        font-size: 16px;
+        line-height: 1.75;
+        color: var(--grey-600);
+        margin-bottom: 38px;
+        max-width: 460px;
+      }
+      .h-acts {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 52px;
+      }
+      .h-trust {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding-top: 28px;
+        border-top: 1px solid var(--border);
+        flex-wrap: wrap;
+      }
+      .h-trust-lbl {
+        font-size: 10px;
+        color: var(--grey-400);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        white-space: nowrap;
+      }
+      .badges {
+        display: flex;
+        gap: 7px;
+        flex-wrap: wrap;
+      }
+      .bdg {
+        background: var(--grey-50);
+        border: 1px solid var(--border);
+        color: var(--grey-600);
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding: 5px 11px;
+        border-radius: 5px;
+      }
+      .h-vis {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .hc {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 26px;
+        box-shadow: var(--sh-md);
+        transition: transform 0.3s;
+      }
+      .hc:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--sh-lg);
+      }
+      .hc-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+      }
+      .hc-ico {
+        width: 42px;
+        height: 42px;
+        background: var(--em-pale);
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+      .hc-tag {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--em);
+        background: var(--em-pale);
+        border: 1px solid var(--border-em);
+        padding: 4px 10px;
+        border-radius: 100px;
+      }
+      .hc-tag.gld {
+        color: var(--gold);
+        background: var(--gold-pale);
+        border-color: rgba(184, 137, 58, 0.2);
+      }
+      .hc h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 5px;
+      }
+      .hc p {
+        font-size: 12px;
+        color: var(--grey-600);
+        line-height: 1.6;
+      }
+      .h-srow {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .h-ms {
+        background: #fff;
+        padding: 18px 14px;
+        text-align: center;
+      }
+      .h-ms strong {
+        display: block;
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--em);
+        line-height: 1;
+      }
+      .h-ms sup {
+        font-size: 14px;
+        vertical-align: top;
+        margin-top: 4px;
+        display: inline-block;
+      }
+      .h-ms span {
+        font-size: 10px;
+        color: var(--grey-400);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        display: block;
+      }
+
+      /* TICKER */
+      .ticker {
+        background: var(--em);
+        padding: 13px 0;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .t-track {
+        display: inline-flex;
+        animation: tick 34s linear infinite;
+      }
+      .t-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.88);
+        padding: 0 32px;
+      }
+      .t-item::after {
+        content: "◆";
+        font-size: 6px;
+        opacity: 0.45;
+      }
+      @keyframes tick {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* STATS */
+      #stats {
+        background: var(--grey-50);
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        padding: 52px 0;
+      }
+      .s-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .s-item {
+        text-align: center;
+        padding: 0 28px;
+        border-right: 1px solid var(--border);
+      }
+      .s-item:last-child {
+        border-right: none;
+      }
+      .s-num {
+        font-family: "Playfair Display", serif;
+        font-size: 46px;
+        font-weight: 600;
+        color: var(--em);
+        line-height: 1;
+        display: block;
+      }
+      .s-num sup {
+        font-size: 20px;
+        vertical-align: top;
+        margin-top: 8px;
+        display: inline-block;
+      }
+      .s-lbl {
+        font-size: 11px;
+        color: var(--grey-600);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-top: 9px;
+        display: block;
+      }
+      .s-sub {
+        font-size: 12px;
+        color: var(--grey-400);
+        margin-top: 3px;
+        display: block;
+      }
+
+      /* SERVICES */
+      .srv-hd {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 56px;
+        gap: 28px;
+        flex-wrap: wrap;
+      }
+      .srv-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+      .scard {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 34px 28px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s;
+        box-shadow: var(--sh-sm);
+      }
+      .scard::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--border);
+        transition: background 0.3s;
+      }
+      .scard:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--sh-lg);
+        border-color: var(--border-em);
+      }
+      .scard:hover::before {
+        background: var(--em);
+      }
+      .scard:hover .sico {
+        background: var(--em);
+      }
+      .scard-n {
+        font-family: "DM Mono", monospace;
+        font-size: 10px;
+        color: var(--grey-300);
+        letter-spacing: 2px;
+        margin-bottom: 18px;
+        display: block;
+      }
+      .sico {
+        width: 50px;
+        height: 50px;
+        background: var(--em-pale);
+        border-radius: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        margin-bottom: 18px;
+        transition: background 0.3s;
+      }
+      .scard h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 19px;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 11px;
+      }
+      .scard p {
+        font-size: 13px;
+        line-height: 1.75;
+        color: var(--grey-600);
+      }
+      .stags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-top: 18px;
+      }
+      .stag {
+        font-size: 10px;
+        font-weight: 500;
+        color: var(--em);
+        background: var(--em-pale);
+        border: 1px solid var(--border-em);
+        padding: 3px 10px;
+        border-radius: 100px;
+      }
+      .sarr {
+        position: absolute;
+        bottom: 26px;
+        right: 26px;
+        font-size: 17px;
+        color: var(--grey-300);
+        transition: all 0.3s;
+      }
+      .scard:hover .sarr {
+        color: var(--em);
+        transform: translate(3px, -3px);
+      }
+
+      /* COMPLIANCE */
+      .comp-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 68px;
+        align-items: start;
+      }
+      .comp-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 36px;
+      }
+      .ci {
+        display: flex;
+        gap: 18px;
+        padding: 26px 0;
+        border-bottom: 1px solid var(--border);
+        align-items: flex-start;
+      }
+      .ci-ico {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        background: var(--em-pale);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        margin-top: 2px;
+      }
+      .ci-b h4 {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 5px;
+      }
+      .ci-b p {
+        font-size: 13px;
+        line-height: 1.7;
+        color: var(--grey-600);
+      }
+      .ci-chip {
+        display: inline-block;
+        margin-top: 9px;
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--gold);
+        background: var(--gold-pale);
+        border: 1px solid rgba(184, 137, 58, 0.2);
+        padding: 3px 11px;
+        border-radius: 100px;
+      }
+      .comp-r {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .czc {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 11px;
+        padding: 26px;
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        box-shadow: var(--sh-sm);
+        transition: all 0.3s;
+      }
+      .czc:hover {
+        border-color: var(--border-em);
+        box-shadow: var(--sh-md);
+        transform: translateX(4px);
+      }
+      .czc-ico {
+        font-size: 26px;
+        min-width: 38px;
+      }
+      .czc-b h4 {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 4px;
+      }
+      .czc-b p {
+        font-size: 12px;
+        color: var(--grey-600);
+        line-height: 1.6;
+      }
+      .comp-hl {
+        background: var(--em);
+        border-radius: 12px;
+        padding: 30px;
+        color: #fff;
+        margin-top: 6px;
+      }
+      .comp-hl h4 {
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .comp-hl p {
+        font-size: 13px;
+        line-height: 1.7;
+        opacity: 0.85;
+      }
+      .hl-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1px;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 8px;
+        overflow: hidden;
+        margin-top: 22px;
+      }
+      .hl-s {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px 10px;
+        text-align: center;
+      }
+      .hl-s strong {
+        display: block;
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        font-weight: 600;
+      }
+      .hl-s span {
+        font-size: 9px;
+        opacity: 0.7;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 4px;
+        display: block;
+      }
+
+      /* PROCESS */
+      .proc-steps {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+        position: relative;
+        margin-top: 56px;
+      }
+      .proc-steps::before {
+        content: "";
+        position: absolute;
+        top: 27px;
+        left: 10%;
+        right: 10%;
+        height: 1px;
+        background: var(--border);
+      }
+      .pstep {
+        padding: 0 14px;
+        text-align: center;
+        position: relative;
+      }
+      .ps-n {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        border: 2px solid var(--em);
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Playfair Display", serif;
+        font-size: 19px;
+        font-weight: 600;
+        color: var(--em);
+        margin: 0 auto 18px;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s;
+      }
+      .pstep:hover .ps-n {
+        background: var(--em);
+        color: #fff;
+        transform: scale(1.1);
+      }
+      .pstep h4 {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 7px;
+      }
+      .pstep p {
+        font-size: 11px;
+        color: var(--grey-600);
+        line-height: 1.6;
+      }
+
+      /* PRICING */
+      .pr-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+        margin-top: 56px;
+      }
+      .pcard {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 42px 34px;
+        position: relative;
+        box-shadow: var(--sh-sm);
+        transition: all 0.3s;
+      }
+      .pcard:hover {
+        box-shadow: var(--sh-lg);
+        transform: translateY(-5px);
+      }
+      .pcard.pop {
+        border: 2px solid var(--em);
+        box-shadow: 0 8px 36px rgba(10, 102, 64, 0.15);
+        transform: scale(1.02);
+      }
+      .pcard.pop:hover {
+        transform: scale(1.02) translateY(-5px);
+      }
+      .pop-lbl {
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--em);
+        color: #fff;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 6px 18px;
+        border-radius: 0 0 9px 9px;
+      }
+      .pr-tier {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--em);
+        margin-bottom: 12px;
+      }
+      .pr-desc {
+        font-size: 12px;
+        color: var(--grey-600);
+        margin-bottom: 24px;
+        line-height: 1.55;
+      }
+      .pr-amt {
+        display: flex;
+        align-items: flex-start;
+        gap: 3px;
+        margin-bottom: 4px;
+      }
+      .pr-cur {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--grey-400);
+        margin-top: 9px;
+      }
+      .pr-n {
+        font-family: "Playfair Display", serif;
+        font-size: 50px;
+        font-weight: 600;
+        color: var(--black);
+        line-height: 1;
+      }
+      .pr-per {
+        font-size: 12px;
+        color: var(--grey-400);
+        margin-bottom: 5px;
+      }
+      .pr-note {
+        font-size: 11px;
+        color: var(--gold);
+        font-weight: 600;
+        margin-bottom: 24px;
+      }
+      .pr-div {
+        height: 1px;
+        background: var(--border);
+        margin: 22px 0;
+      }
+      .pr-feats {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        margin-bottom: 34px;
+      }
+      .pr-feats li {
+        display: flex;
+        align-items: flex-start;
+        gap: 9px;
+        font-size: 13px;
+        color: var(--black);
+        line-height: 1.5;
+      }
+      .pr-feats li::before {
+        content: "✓";
+        color: var(--em);
+        font-weight: 700;
+        font-size: 11px;
+        margin-top: 2px;
+        flex-shrink: 0;
+      }
+      .pr-feats li.na {
+        color: var(--grey-400);
+      }
+      .pr-feats li.na::before {
+        content: "–";
+        color: var(--grey-300);
+      }
+      .pcard .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      /* ABOUT */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 68px;
+        align-items: center;
+      }
+      .aqc {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 38px;
+        box-shadow: var(--sh-md);
+        position: relative;
+        overflow: hidden;
+      }
+      .aqc::before {
+        content: '"';
+        font-family: "Playfair Display", serif;
+        font-size: 110px;
+        color: var(--em-pale);
+        line-height: 0.8;
+        position: absolute;
+        top: 14px;
+        left: 22px;
+        z-index: 0;
+      }
+      .aq-text {
+        font-family: "Playfair Display", serif;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: 400;
+        color: var(--black);
+        line-height: 1.6;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 18px;
+      }
+      .aq-auth {
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--em);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      .ab-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 22px;
+        border: 1px solid var(--border);
+        border-radius: 11px;
+        overflow: hidden;
+      }
+      .ab-s {
+        padding: 18px 14px;
+        text-align: center;
+        background: var(--grey-50);
+        border-right: 1px solid var(--border);
+      }
+      .ab-s:last-child {
+        border-right: none;
+      }
+      .ab-s strong {
+        display: block;
+        font-family: "Playfair Display", serif;
+        font-size: 26px;
+        font-weight: 600;
+        color: var(--em);
+        line-height: 1;
+      }
+      .ab-s span {
+        font-size: 10px;
+        color: var(--grey-600);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        display: block;
+      }
+      .ab-body {
+        font-size: 14px;
+        line-height: 1.85;
+        color: var(--grey-600);
+        margin: 18px 0;
+      }
+      .av-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 28px;
+      }
+      .av {
+        display: flex;
+        gap: 13px;
+        align-items: flex-start;
+        padding: 17px 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .av-ico {
+        width: 35px;
+        height: 35px;
+        min-width: 35px;
+        background: var(--em-pale);
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+      }
+      .av h4 {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 3px;
+      }
+      .av p {
+        font-size: 12px;
+        color: var(--grey-600);
+        line-height: 1.6;
+      }
+
+      /* TEAM */
+      .tm-hd {
+        text-align: center;
+        margin-bottom: 52px;
+      }
+      .tm-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 22px;
+      }
+      .tcard {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 30px 22px;
+        text-align: center;
+        box-shadow: var(--sh-sm);
+        transition: all 0.3s;
+      }
+      .tcard:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--sh-lg);
+        border-color: var(--border-em);
+      }
+      .tav {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--em-pale), var(--grey-200));
+        border: 3px solid var(--border);
+        margin: 0 auto 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--em);
+      }
+      .tname {
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 3px;
+      }
+      .trole {
+        font-size: 12px;
+        color: var(--em);
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        margin-bottom: 7px;
+      }
+      .tqual {
+        font-size: 11px;
+        color: var(--grey-400);
+        line-height: 1.5;
+      }
+
+      /* TESTIMONIALS */
+      .tst-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+        margin-top: 52px;
+      }
+      .tst {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 34px 28px;
+        box-shadow: var(--sh-sm);
+        transition: all 0.3s;
+      }
+      .tst:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--sh-lg);
+      }
+      .tst-stars {
+        color: var(--gold);
+        font-size: 13px;
+        letter-spacing: 2px;
+        margin-bottom: 14px;
+      }
+      .tst-txt {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 1.7;
+        color: var(--black);
+        margin-bottom: 22px;
+      }
+      .tst-div {
+        height: 1px;
+        background: var(--border);
+        margin-bottom: 18px;
+      }
+      .tst-au {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+      }
+      .tst-ini {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: var(--em-pale);
+        border: 2px solid var(--border-em);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Playfair Display", serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--em);
+      }
+      .tst-name {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 2px;
+      }
+      .tst-co {
+        font-size: 11px;
+        color: var(--grey-400);
+      }
+
+      /* FAQ */
+      .faq-w {
+        max-width: 760px;
+        margin: 52px auto 0;
+      }
+      .fq {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: var(--sh-sm);
+      }
+      .fq-btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 26px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        gap: 14px;
+        text-align: left;
+      }
+      .fq-txt {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--black);
+        transition: color 0.2s;
+      }
+      .fq-btn:hover .fq-txt {
+        color: var(--em);
+      }
+      .fq-ic {
+        width: 28px;
+        height: 28px;
+        min-width: 28px;
+        border: 1.5px solid var(--border);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--em);
+        font-size: 17px;
+        font-weight: 300;
+        transition: all 0.3s;
+        background: var(--grey-50);
+      }
+      .fq.on .fq-ic {
+        transform: rotate(45deg);
+        background: var(--em);
+        border-color: var(--em);
+        color: #fff;
+      }
+      .fq-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+      }
+      .fq-bi {
+        padding: 0 26px 22px;
+        font-size: 14px;
+        line-height: 1.8;
+        color: var(--grey-600);
+        border-top: 1px solid var(--border);
+        padding-top: 16px;
+      }
+      .fq.on .fq-body {
+        max-height: 280px;
+      }
+
+      /* CTA BAND */
+      #cta-band {
+        background: var(--black);
+        padding: 92px 0;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+      }
+      #cta-band::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 65% 75% at 50% 50%,
+          rgba(10, 102, 64, 0.22) 0%,
+          transparent 70%
+        );
+      }
+      .cta-in {
+        position: relative;
+        z-index: 1;
+      }
+      #cta-band .label {
+        color: var(--em-light);
+      }
+      #cta-band .label::before {
+        background: var(--em-light);
+      }
+      #cta-band h2 {
+        color: #fff !important;
+        margin: 14px 0;
+      }
+      #cta-band h2 em {
+        color: var(--gold-lt) !important;
+      }
+      #cta-band p {
+        color: rgba(255, 255, 255, 0.58);
+        font-size: 15px;
+        margin-bottom: 38px;
+      }
+      .cta-acts {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      /* CONTACT */
+      .con-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 68px;
+        align-items: start;
+      }
+      .cd-list {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-top: 38px;
+      }
+      .cdi {
+        display: flex;
+        gap: 13px;
+        align-items: flex-start;
+      }
+      .cdi-ico {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        background: var(--em-pale);
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+      }
+      .cdi-tx strong {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--black);
+        display: block;
+        margin-bottom: 3px;
+      }
+      .cdi-tx span {
+        font-size: 13px;
+        color: var(--grey-600);
+        line-height: 1.6;
+        display: block;
+      }
+      .cf-card {
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 46px;
+        box-shadow: var(--sh-lg);
+      }
+      .cf-ttl {
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--black);
+        margin-bottom: 6px;
+      }
+      .cf-sub {
+        font-size: 13px;
+        color: var(--grey-600);
+        margin-bottom: 32px;
+      }
+      .frow {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+      .fg {
+        margin-bottom: 16px;
+      }
+      .fg label {
+        display: block;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--grey-600);
+        margin-bottom: 7px;
+      }
+      .fg input,
+      .fg select,
+      .fg textarea {
+        width: 100%;
+        padding: 12px 14px;
+        background: var(--grey-50);
+        border: 1.5px solid var(--border);
+        border-radius: 7px;
+        color: var(--black);
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        outline: none;
+        transition:
+          border-color 0.2s,
+          background 0.2s;
+        appearance: none;
+        -webkit-appearance: none;
+      }
+      .fg input:focus,
+      .fg select:focus,
+      .fg textarea:focus {
+        border-color: var(--em);
+        background: #fff;
+        box-shadow: 0 0 0 3px rgba(10, 102, 64, 0.07);
+      }
+      .fg input::placeholder,
+      .fg textarea::placeholder {
+        color: var(--grey-300);
+      }
+      .fg textarea {
+        min-height: 106px;
+        resize: vertical;
+      }
+      .fg select option {
+        background: #fff;
+      }
+      .fsub {
+        width: 100%;
+        justify-content: center;
+        font-size: 13px;
+        padding: 15px;
+        border-radius: 9px;
+      }
+      .fnote {
+        font-size: 11px;
+        color: var(--grey-400);
+        text-align: center;
+        margin-top: 12px;
+        line-height: 1.6;
+      }
+      .ok-msg {
+        display: none;
+        background: var(--em-pale);
+        border: 1.5px solid var(--border-em);
+        border-radius: 9px;
+        padding: 18px;
+        text-align: center;
+        color: var(--em);
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 14px;
+      }
+
+      /* FOOTER */
+      footer {
+        background: var(--black);
+        color: rgba(255, 255, 255, 0.65);
+        padding: 68px 0 0;
+      }
+      .ft-top {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 52px;
+        padding-bottom: 52px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .ft-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+      .ft-lm {
+        width: 35px;
+        height: 35px;
+        background: var(--em);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Playfair Display", serif;
+        font-size: 13px;
+        font-weight: 700;
+        color: #fff;
+      }
+      .ft-logo strong {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+      }
+      .ft-brand p {
+        font-size: 13px;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.45);
+        max-width: 255px;
+      }
+      .ft-certs {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-top: 18px;
+      }
+      .ft-cert {
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.55);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        padding: 4px 9px;
+        border-radius: 4px;
+      }
+      .ft-col h5 {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.88);
+        margin-bottom: 18px;
+      }
+      .ft-col ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .ft-col ul li a {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.45);
+        transition: color 0.2s;
+      }
+      .ft-col ul li a:hover {
+        color: var(--em-light);
+      }
+      .ft-btm {
+        padding: 22px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .ft-copy {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.3);
+      }
+      .ft-legal {
+        display: flex;
+        gap: 22px;
+      }
+      .ft-legal a {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.3);
+        transition: color 0.2s;
+      }
+      .ft-legal a:hover {
+        color: rgba(255, 255, 255, 0.65);
+      }
+
+      /* REVEAL */
+      .rv {
+        opacity: 0;
+        transform: translateY(26px);
+        transition:
+          opacity 0.6s ease,
+          transform 0.6s ease;
+      }
+      .rv.in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .d1 {
+        transition-delay: 0.1s;
+      }
+      .d2 {
+        transition-delay: 0.2s;
+      }
+      .d3 {
+        transition-delay: 0.3s;
+      }
+      .d4 {
+        transition-delay: 0.4s;
+      }
+      .d5 {
+        transition-delay: 0.5s;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 1100px) {
+        .srv-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .tm-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .ft-top {
+          grid-template-columns: 1fr 1fr;
+          gap: 32px;
+        }
+        .proc-steps {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 28px;
+        }
+        .proc-steps::before {
+          display: none;
+        }
+        .pr-grid {
+          grid-template-columns: 1fr;
+          max-width: 430px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .pcard.pop {
+          transform: none;
+        }
+      }
+      @media (max-width: 900px) {
+        .nav-in {
+          padding: 0 22px;
+        }
+        .nav-ul {
+          display: none;
+        }
+        .hbg {
+          display: flex;
+        }
+        .wrap {
+          padding: 0 22px;
+        }
+        .hero-in,
+        .comp-grid,
+        .about-grid,
+        .con-grid {
+          grid-template-columns: 1fr;
+          gap: 36px;
+        }
+        .h-shape,
+        .h-dots {
+          display: none;
+        }
+        #hero {
+          padding: 108px 0 68px;
+        }
+        .sec {
+          padding: 68px 0;
+        }
+        .s-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .s-item:nth-child(2) {
+          border-right: none;
+        }
+        .s-item:nth-child(3) {
+          border-top: 1px solid var(--border);
+        }
+        .tst-grid {
+          grid-template-columns: 1fr;
+        }
+        .frow {
+          grid-template-columns: 1fr;
+        }
+        .cf-card {
+          padding: 30px 22px;
+        }
+        .ft-top {
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+        .ft-btm {
+          flex-direction: column;
+          text-align: center;
+        }
+        .h-acts {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .cta-acts {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      @media (max-width: 600px) {
+        .srv-grid,
+        .tm-grid {
+          grid-template-columns: 1fr;
+        }
+        .proc-steps {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        h1 {
+          font-size: 34px;
+        }
+        .s-num {
+          font-size: 36px;
+        }
+      }
+
+      /* ── WHATSAPP BUTTON ── */
+      .wa-btn {
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        z-index: 8000;
+        width: 60px;
+        height: 60px;
+        background: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+        cursor: pointer;
+        transition: all 0.3s;
+        animation: waPulse 2.5s ease-in-out infinite;
+      }
+      .wa-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 10px 32px rgba(37, 211, 102, 0.55);
+        animation: none;
+      }
+      .wa-btn svg {
+        width: 32px;
+        height: 32px;
+        fill: #fff;
+      }
+      .wa-tooltip {
+        position: absolute;
+        right: 72px;
+        bottom: 50%;
+        transform: translateY(50%);
+        background: #0d1a13;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        white-space: nowrap;
+        padding: 8px 14px;
+        border-radius: 6px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+        letter-spacing: 0.3px;
+      }
+      .wa-tooltip::after {
+        content: "";
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 6px solid transparent;
+        border-left-color: #0d1a13;
+      }
+      .wa-btn:hover .wa-tooltip {
+        opacity: 1;
+      }
+      @keyframes waPulse {
+        0%,
+        100% {
+          box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+        }
+        50% {
+          box-shadow:
+            0 6px 32px rgba(37, 211, 102, 0.7),
+            0 0 0 10px rgba(37, 211, 102, 0.1);
+        }
+      }
+
+      /* ── GOOGLE REVIEWS BADGE ── */
+      .gr-badge {
+        position: fixed;
+        bottom: 100px;
+        right: 28px;
+        z-index: 7999;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(13, 26, 19, 0.14);
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        border: 1px solid #e2ebe5;
+        min-width: 180px;
+      }
+      .gr-badge:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 32px rgba(13, 26, 19, 0.18);
+      }
+      .gr-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .gr-logo svg {
+        width: 22px;
+        height: 22px;
+      }
+      .gr-info {
+        display: flex;
+        flex-direction: column;
+      }
+      .gr-stars {
+        display: flex;
+        gap: 2px;
+      }
+      .gr-stars svg {
+        width: 13px;
+        height: 13px;
+        fill: #fbbc04;
+      }
+      .gr-score {
+        font-size: 13px;
+        font-weight: 700;
+        color: #0d1a13;
+        line-height: 1;
+        margin-top: 2px;
+      }
+      .gr-count {
+        font-size: 10px;
+        color: #486056;
+        letter-spacing: 0.3px;
+      }
+      .gr-label {
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #486056;
+        margin-top: 1px;
+      }
+
+      /* ── LIVE CHAT POPUP ── */
+      .chat-bubble {
+        position: fixed;
+        bottom: 28px;
+        left: 28px;
+        z-index: 8000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+      }
+      .chat-toggle {
+        width: 56px;
+        height: 56px;
+        background: var(--em);
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 18px rgba(10, 102, 64, 0.35);
+        transition: all 0.3s;
+        position: relative;
+      }
+      .chat-toggle:hover {
+        background: var(--em-mid);
+        transform: scale(1.08);
+      }
+      .chat-toggle svg {
+        width: 26px;
+        height: 26px;
+        fill: #fff;
+        transition: all 0.3s;
+      }
+      .chat-notif {
+        position: absolute;
+        top: -3px;
+        right: -3px;
+        width: 18px;
+        height: 18px;
+        background: #e53935;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: 700;
+        color: #fff;
+      }
+      .chat-panel {
+        position: absolute;
+        bottom: 68px;
+        left: 0;
+        width: 320px;
+        background: #fff;
+        border-radius: 14px;
+        box-shadow: 0 12px 48px rgba(13, 26, 19, 0.18);
+        overflow: hidden;
+        transform-origin: bottom left;
+        transform: scale(0.85) translateY(12px);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      .chat-panel.open {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+        pointer-events: all;
+      }
+      .chat-head {
+        background: var(--em);
+        padding: 18px 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .chat-avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Playfair Display", serif;
+        font-size: 16px;
+        color: #fff;
+        font-weight: 600;
+      }
+      .chat-head-info {
+        flex: 1;
+      }
+      .chat-head-name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+      }
+      .chat-head-status {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.75);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .chat-status-dot {
+        width: 7px;
+        height: 7px;
+        background: #4ade80;
+        border-radius: 50%;
+        display: inline-block;
+      }
+      .chat-close-btn {
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 20px;
+        cursor: pointer;
+        padding: 0 4px;
+        line-height: 1;
+      }
+      .chat-close-btn:hover {
+        color: #fff;
+      }
+      .chat-body {
+        padding: 20px;
+      }
+      .chat-msg {
+        background: #f0faf5;
+        border-radius: 0 10px 10px 10px;
+        padding: 12px 14px;
+        font-size: 13px;
+        line-height: 1.6;
+        color: #0d1a13;
+        margin-bottom: 14px;
+        border: 1px solid #e5f4ec;
+      }
+      .chat-msg strong {
+        color: var(--em);
+      }
+      .chat-quick {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .chat-quick-label {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #486056;
+        margin-bottom: 4px;
+      }
+      .chat-quick-btn {
+        padding: 10px 14px;
+        background: #fff;
+        border: 1.5px solid var(--border-em);
+        border-radius: 8px;
+        font-size: 12px;
+        color: var(--em);
+        font-weight: 500;
+        cursor: pointer;
+        text-align: left;
+        transition: all 0.2s;
+      }
+      .chat-quick-btn:hover {
+        background: #f0faf5;
+        border-color: var(--em);
+      }
+      .chat-input-row {
+        display: flex;
+        gap: 8px;
+        margin-top: 14px;
+        border-top: 1px solid #e2ebe5;
+        padding-top: 14px;
+      }
+      .chat-input {
+        flex: 1;
+        padding: 10px 12px;
+        border: 1.5px solid #e2ebe5;
+        border-radius: 8px;
+        font-size: 13px;
+        font-family: "Inter", sans-serif;
+        outline: none;
+        color: #0d1a13;
+      }
+      .chat-input:focus {
+        border-color: var(--em);
+      }
+      .chat-send {
+        width: 38px;
+        height: 38px;
+        background: var(--em);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: background 0.2s;
+      }
+      .chat-send:hover {
+        background: var(--em-mid);
+      }
+      .chat-send svg {
+        width: 16px;
+        height: 16px;
+        fill: #fff;
+      }
+
+      /* ── REGULATORY LOGOS BAR ── */
+      .trust-bar {
+        background: #f7faf8;
+        border-bottom: 1px solid #e2ebe5;
+        padding: 10px 0;
+        overflow: hidden;
+      }
+      .trust-bar-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      .trust-bar-label {
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: #8ca898;
+        white-space: nowrap;
+      }
+      .trust-logos {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        flex-wrap: wrap;
+      }
+      .trust-logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 16px;
+        border: 1px solid #dce8e0;
+        border-radius: 6px;
+        background: #fff;
+        transition: all 0.2s;
+        cursor: default;
+      }
+      .trust-logo:hover {
+        border-color: var(--em);
+        box-shadow: 0 2px 10px rgba(10, 102, 64, 0.1);
+      }
+      .trust-logo-icon {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .trust-logo-text {
+        display: flex;
+        flex-direction: column;
+      }
+      .trust-logo-name {
+        font-size: 11px;
+        font-weight: 700;
+        color: #0d1a13;
+        letter-spacing: 0.5px;
+      }
+      .trust-logo-sub {
+        font-size: 9px;
+        color: #8ca898;
+        letter-spacing: 0.3px;
+      }
+      @media (max-width: 768px) {
+        .trust-bar-inner {
+          justify-content: center;
+        }
+        .trust-bar-label {
+          display: none;
+        }
+        .trust-logos {
+          gap: 10px;
+        }
+        .trust-logo {
+          padding: 5px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cur" id="c1"></div>
+    <div class="cur-r" id="c2"></div>
+
+    <!-- REGULATORY TRUST BAR -->
+    <div class="trust-bar">
+      <div class="trust-bar-inner">
+        <span class="trust-bar-label">Regulated &amp; Certified</span>
+        <div class="trust-logos">
+          <div class="trust-logo">
+            <div class="trust-logo-icon">
+              <svg
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="6" fill="#2E4057" />
+                <text
+                  x="50%"
+                  y="54%"
+                  dominant-baseline="middle"
+                  text-anchor="middle"
+                  fill="#fff"
+                  font-size="11"
+                  font-weight="700"
+                  font-family="Arial"
+                >
+                  ACCA
+                </text>
+              </svg>
+            </div>
+            <div class="trust-logo-text">
+              <span class="trust-logo-name">ACCA</span>
+              <span class="trust-logo-sub">Qualified Members</span>
+            </div>
+          </div>
+          <div class="trust-logo">
+            <div class="trust-logo-icon">
+              <svg
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="6" fill="#003087" />
+                <text
+                  x="50%"
+                  y="54%"
+                  dominant-baseline="middle"
+                  text-anchor="middle"
+                  fill="#fff"
+                  font-size="9"
+                  font-weight="700"
+                  font-family="Arial"
+                >
+                  ICAEW
+                </text>
+              </svg>
+            </div>
+            <div class="trust-logo-text">
+              <span class="trust-logo-name">ICAEW</span>
+              <span class="trust-logo-sub">Chartered Accountants</span>
+            </div>
+          </div>
+          <div class="trust-logo">
+            <div class="trust-logo-icon">
+              <svg
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="6" fill="#00843D" />
+                <text
+                  x="50%"
+                  y="46%"
+                  dominant-baseline="middle"
+                  text-anchor="middle"
+                  fill="#fff"
+                  font-size="8"
+                  font-weight="700"
+                  font-family="Arial"
+                >
+                  FTA
+                </text>
+                <text
+                  x="50%"
+                  y="68%"
+                  dominant-baseline="middle"
+                  text-anchor="middle"
+                  fill="rgba(255,255,255,0.8)"
+                  font-size="6"
+                  font-family="Arial"
+                >
+                  REGISTERED
+                </text>
+              </svg>
+            </div>
+            <div class="trust-logo-text">
+              <span class="trust-logo-name">FTA Registered</span>
+              <span class="trust-logo-sub">UAE Tax Agent</span>
+            </div>
+          </div>
+          <div class="trust-logo">
+            <div class="trust-logo-icon">
+              <svg
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="6" fill="#13B5EA" />
+                <text
+                  x="50%"
+                  y="54%"
+                  dominant-baseline="middle"
+                  text-anchor="middle"
+                  fill="#fff"
+                  font-size="9"
+                  font-weight="700"
+                  font-family="Arial"
+                >
+                  XERO
+                </text>
+              </svg>
+            </div>
+            <div class="trust-logo-text">
+              <span class="trust-logo-name">Xero</span>
+              <span class="trust-logo-sub">Certified Partner</span>
+            </div>
+          </div>
+          <div class="trust-logo">
+            <div class="trust-logo-icon">
+              <svg
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="40" height="40" rx="6" fill="#2CA01C" />
+                <text
+                  x="50%"
+                  y="46%"
+                  dominant-baseline="middle"
+                  text-anchor="middle"
+                  fill="#fff"
+                  font-size="7"
+                  font-weight="700"
+                  font-family="Arial"
+                >
+                  QuickBooks
+                </text>
+                <text
+                  x="50%"
+                  y="68%"
+                  dominant-baseline="middle"
+                  text-anchor="middle"
+                  fill="rgba(255,255,255,0.85)"
+                  font-size="6"
+                  font-family="Arial"
+                >
+                  CERTIFIED
+                </text>
+              </svg>
+            </div>
+            <div class="trust-logo-text">
+              <span class="trust-logo-name">QuickBooks</span>
+              <span class="trust-logo-sub">Certified Advisor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="nav">
+      <div class="nav-in">
+        <a href="#" class="logo">
+          <div class="logo-sq">CA</div>
+          <div class="logo-tx">
+            <strong>Compliance Accountants</strong>
+            <small>Financial Integrity &amp; Precision</small>
+          </div>
+        </a>
+        <ul class="nav-ul">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#compliance">UAE Compliance</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#testimonials">Clients</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact" class="cta">Free Consultation</a></li>
+        </ul>
+        <button class="hbg" onclick="toggleNav()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE DRAWER -->
+    <div class="drawer" id="drawer">
+      <button class="d-close" onclick="toggleNav()">✕</button>
+      <a href="#services" onclick="toggleNav()">Services</a>
+      <a href="#compliance" onclick="toggleNav()">UAE Compliance</a>
+      <a href="#about" onclick="toggleNav()">About</a>
+      <a href="#pricing" onclick="toggleNav()">Pricing</a>
+      <a href="#testimonials" onclick="toggleNav()">Clients</a>
+      <a href="#faq" onclick="toggleNav()">FAQ</a>
+      <a href="#contact" onclick="toggleNav()">Free Consultation →</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="h-shape"></div>
+      <div class="h-dots"></div>
+      <div class="wrap">
+        <div class="hero-in">
+          <div class="rv">
+            <div class="h-pill">UAE Accounting &amp; Tax Specialists</div>
+            <h1>
+              Financial <em>Clarity</em><br />for UAE
+              <span class="gld">SMEs</span>
+            </h1>
+            <p class="h-sub">
+              Expert bookkeeping, VAT compliance, corporate tax, and financial
+              advisory — built specifically for small and medium businesses
+              across the UAE.
+            </p>
+            <div class="h-acts">
+              <a href="#contact" class="btn btn-g">Book Free Consultation</a>
+              <a href="#services" class="btn btn-o">Explore Services</a>
+            </div>
+            <div class="h-trust">
+              <span class="h-trust-lbl">Certified by</span>
+              <div class="badges">
+                <span class="bdg">ACCA</span>
+                <span class="bdg">ICAEW</span>
+                <span class="bdg">FTA Registered</span>
+                <span class="bdg">Xero Partner</span>
+              </div>
+            </div>
+          </div>
+          <div class="h-vis rv d2">
+            <div class="hc">
+              <div class="hc-top">
+                <div class="hc-ico">🧾</div>
+                <span class="hc-tag">VAT Compliance</span>
+              </div>
+              <h4>Q1 2025 VAT Return Filed</h4>
+              <p>
+                AED 847,200 in taxable supplies reviewed and submitted to FTA —
+                on time, zero penalties.
+              </p>
+            </div>
+            <div class="hc">
+              <div class="hc-top">
+                <div class="hc-ico">📊</div>
+                <span class="hc-tag gld">Corporate Tax</span>
+              </div>
+              <h4>Corporate Tax Registration Complete</h4>
+              <p>
+                Registered under UAE CT regime with optimal structure for
+                Qualifying Free Zone 0% status.
+              </p>
+            </div>
+            <div class="h-srow">
+              <div class="h-ms">
+                <strong>250<sup>+</sup></strong
+                ><span>SME Clients</span>
+              </div>
+              <div class="h-ms">
+                <strong>100<sup>%</sup></strong
+                ><span>FTA Compliant</span>
+              </div>
+              <div class="h-ms">
+                <strong>0</strong><span>Penalties Issued</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="t-track">
+        <span class="t-item">Bookkeeping &amp; Accounts</span>
+        <span class="t-item">VAT Registration &amp; Filing</span>
+        <span class="t-item">UAE Corporate Tax 9%</span>
+        <span class="t-item">Payroll &amp; WPS Compliance</span>
+        <span class="t-item">Financial Reporting</span>
+        <span class="t-item">Free Zone Accounting</span>
+        <span class="t-item">CFO Advisory Services</span>
+        <span class="t-item">ESR Reporting</span>
+        <span class="t-item">UBO Registration</span>
+        <span class="t-item">Audit Support</span>
+        <span class="t-item">Bookkeeping &amp; Accounts</span>
+        <span class="t-item">VAT Registration &amp; Filing</span>
+        <span class="t-item">UAE Corporate Tax 9%</span>
+        <span class="t-item">Payroll &amp; WPS Compliance</span>
+        <span class="t-item">Financial Reporting</span>
+        <span class="t-item">Free Zone Accounting</span>
+        <span class="t-item">CFO Advisory Services</span>
+        <span class="t-item">ESR Reporting</span>
+        <span class="t-item">UBO Registration</span>
+        <span class="t-item">Audit Support</span>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <section id="stats">
+      <div class="wrap">
+        <div class="s-grid">
+          <div class="s-item rv">
+            <span class="s-num">250<sup>+</sup></span
+            ><span class="s-lbl">UAE SME Clients</span
+            ><span class="s-sub">Across all 7 Emirates</span>
+          </div>
+          <div class="s-item rv d1">
+            <span class="s-num">8<sup>+</sup></span
+            ><span class="s-lbl">Years in UAE</span
+            ><span class="s-sub">Deep local expertise</span>
+          </div>
+          <div class="s-item rv d2">
+            <span class="s-num">100<sup>%</sup></span
+            ><span class="s-lbl">FTA Compliant</span
+            ><span class="s-sub">Zero penalty record</span>
+          </div>
+          <div class="s-item rv d3">
+            <span class="s-num">15</span
+            ><span class="s-lbl">Expert Advisors</span
+            ><span class="s-sub">ACCA &amp; ICAEW qualified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="sec">
+      <div class="wrap">
+        <div class="srv-hd">
+          <div class="rv">
+            <div class="label">What We Do</div>
+            <h2>Our <em>Services</em></h2>
+          </div>
+          <p class="lead rv d1">
+            Comprehensive financial management covering every obligation a UAE
+            SME faces — from day-to-day bookkeeping to board-level advisory.
+          </p>
+        </div>
+        <div class="srv-grid">
+          <div class="scard rv">
+            <span class="scard-n">01</span>
+            <div class="sico">📒</div>
+            <h3>Bookkeeping &amp; Accounts</h3>
+            <p>
+              Day-to-day transaction recording, bank reconciliation, accounts
+              payable &amp; receivable management, and monthly management
+              accounts prepared to IFRS standards.
+            </p>
+            <div class="stags">
+              <span class="stag">Daily Recording</span
+              ><span class="stag">Reconciliation</span
+              ><span class="stag">IFRS</span>
+            </div>
+            <span class="sarr">↗</span>
+          </div>
+          <div class="scard rv d1">
+            <span class="scard-n">02</span>
+            <div class="sico">🧾</div>
+            <h3>VAT Registration &amp; Filing</h3>
+            <p>
+              VAT registration with the FTA, quarterly return preparation, input
+              tax recovery optimisation, and full management of all FTA
+              correspondence and queries.
+            </p>
+            <div class="stags">
+              <span class="stag">FTA Registration</span
+              ><span class="stag">Quarterly Returns</span
+              ><span class="stag">Input Tax</span>
+            </div>
+            <span class="sarr">↗</span>
+          </div>
+          <div class="scard rv d2">
+            <span class="scard-n">03</span>
+            <div class="sico">🏢</div>
+            <h3>Corporate Tax Compliance</h3>
+            <p>
+              UAE CT registration, taxable income computation, transfer pricing
+              documentation, and annual CT return filing under the 9% corporate
+              tax regime active since June 2023.
+            </p>
+            <div class="stags">
+              <span class="stag">CT Registration</span
+              ><span class="stag">9% Regime</span
+              ><span class="stag">Transfer Pricing</span>
+            </div>
+            <span class="sarr">↗</span>
+          </div>
+          <div class="scard rv">
+            <span class="scard-n">04</span>
+            <div class="sico">💼</div>
+            <h3>Payroll Management</h3>
+            <p>
+              Full payroll processing including WPS compliance, gratuity
+              calculations, leave accruals, employee cost reporting, and
+              end-of-service calculations under UAE Labour Law.
+            </p>
+            <div class="stags">
+              <span class="stag">WPS Compliance</span
+              ><span class="stag">Gratuity</span
+              ><span class="stag">Leave Accruals</span>
+            </div>
+            <span class="sarr">↗</span>
+          </div>
+          <div class="scard rv d1">
+            <span class="scard-n">05</span>
+            <div class="sico">📈</div>
+            <h3>Financial Reporting</h3>
+            <p>
+              Annual financial statements, consolidated accounts, management
+              reporting dashboards, cash flow forecasting, and investor-ready
+              financial information packs.
+            </p>
+            <div class="stags">
+              <span class="stag">Annual Statements</span
+              ><span class="stag">Dashboards</span
+              ><span class="stag">Forecasting</span>
+            </div>
+            <span class="sarr">↗</span>
+          </div>
+          <div class="scard rv d2">
+            <span class="scard-n">06</span>
+            <div class="sico">🎯</div>
+            <h3>CFO Advisory</h3>
+            <p>
+              Part-time CFO services for growing SMEs: financial strategy,
+              budgeting, fundraising support, KPI design, and board-level
+              financial reporting and business analysis.
+            </p>
+            <div class="stags">
+              <span class="stag">Strategy</span
+              ><span class="stag">Budgeting</span
+              ><span class="stag">Part-time CFO</span>
+            </div>
+            <span class="sarr">↗</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UAE COMPLIANCE -->
+    <section id="compliance" class="sec sec-alt">
+      <div class="wrap">
+        <div class="comp-grid">
+          <div class="rv">
+            <div class="label">UAE Regulatory</div>
+            <h2>Staying Ahead<br />of <em>Compliance</em></h2>
+            <p class="lead">
+              The UAE regulatory landscape has evolved significantly. We ensure
+              your business meets every obligation — on time, every time.
+            </p>
+            <div class="comp-list">
+              <div class="ci">
+                <div class="ci-ico">⚖️</div>
+                <div class="ci-b">
+                  <h4>VAT — 5% Standard Rate</h4>
+                  <p>
+                    Mandatory for businesses with taxable supplies above AED
+                    375,000 per annum. We handle registration, quarterly
+                    filings, input tax reclaims, and FTA correspondence.
+                  </p>
+                  <span class="ci-chip">Active Since Jan 2018</span>
+                </div>
+              </div>
+              <div class="ci">
+                <div class="ci-ico">🏛️</div>
+                <div class="ci-b">
+                  <h4>Corporate Tax — 9%</h4>
+                  <p>
+                    Federal CT of 9% on profits above AED 375,000 for financial
+                    years starting June 2023. We handle CT registration,
+                    computation, and annual returns.
+                  </p>
+                  <span class="ci-chip">Active Since Jun 2023</span>
+                </div>
+              </div>
+              <div class="ci">
+                <div class="ci-ico">🔍</div>
+                <div class="ci-b">
+                  <h4>Economic Substance Regulations</h4>
+                  <p>
+                    Entities in regulated sectors must demonstrate genuine UAE
+                    economic substance. We prepare ESR notifications and annual
+                    reports to keep you compliant.
+                  </p>
+                  <span class="ci-chip">Annual Filing</span>
+                </div>
+              </div>
+              <div class="ci">
+                <div class="ci-ico">🪪</div>
+                <div class="ci-b">
+                  <h4>Ultimate Beneficial Ownership</h4>
+                  <p>
+                    Mandatory UBO register submissions for all UAE-incorporated
+                    entities. We manage your UBO register and ongoing disclosure
+                    obligations.
+                  </p>
+                  <span class="ci-chip">Mandatory</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comp-r rv d2">
+            <div class="czc">
+              <div class="czc-ico">🏙️</div>
+              <div class="czc-b">
+                <h4>Dubai Mainland</h4>
+                <p>
+                  DED-licensed businesses including LLC structures, sole
+                  proprietorships, and branch offices under UAE commercial law.
+                </p>
+              </div>
+            </div>
+            <div class="czc">
+              <div class="czc-ico">🏗️</div>
+              <div class="czc-b">
+                <h4>Free Zones</h4>
+                <p>
+                  DMCC, DIFC, JAFZA, ADGM, SAIF Zone, RAK ICC and all major UAE
+                  free zones — we know every zone's requirements.
+                </p>
+              </div>
+            </div>
+            <div class="czc">
+              <div class="czc-ico">🌴</div>
+              <div class="czc-b">
+                <h4>Abu Dhabi</h4>
+                <p>
+                  ADGM entities, DED Abu Dhabi, KIZAD industrial businesses and
+                  Abu Dhabi mainland LLCs.
+                </p>
+              </div>
+            </div>
+            <div class="czc">
+              <div class="czc-ico">🔗</div>
+              <div class="czc-b">
+                <h4>Northern Emirates</h4>
+                <p>
+                  Sharjah, Ajman, RAK, Umm Al Quwain and Fujairah companies
+                  fully supported.
+                </p>
+              </div>
+            </div>
+            <div class="comp-hl">
+              <h4>Zero Penalty Track Record</h4>
+              <p>
+                Over 3 consecutive years, none of our clients have received an
+                FTA penalty. That is the standard we hold ourselves — and you —
+                to.
+              </p>
+              <div class="hl-stats">
+                <div class="hl-s">
+                  <strong>3</strong><span>Clean Years</span>
+                </div>
+                <div class="hl-s">
+                  <strong>0</strong><span>FTA Penalties</span>
+                </div>
+                <div class="hl-s">
+                  <strong>18+</strong><span>Industries</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="sec">
+      <div class="wrap">
+        <div style="text-align: center" class="rv">
+          <div class="label" style="justify-content: center">How It Works</div>
+          <h2 style="text-align: center">From Enquiry to <em>Go Live</em></h2>
+          <p class="lead" style="margin: 14px auto 0; text-align: center">
+            Up and running in as little as 5 business days.
+          </p>
+        </div>
+        <div class="proc-steps">
+          <div class="pstep rv">
+            <div class="ps-n">1</div>
+            <h4>Free Consultation</h4>
+            <p>
+              30-minute call with a senior accountant to understand your
+              business and compliance needs.
+            </p>
+          </div>
+          <div class="pstep rv d1">
+            <div class="ps-n">2</div>
+            <h4>Tailored Proposal</h4>
+            <p>
+              A fixed-fee proposal sent within 24 hours — no hourly rates, no
+              surprises.
+            </p>
+          </div>
+          <div class="pstep rv d2">
+            <div class="ps-n">3</div>
+            <h4>Document Handover</h4>
+            <p>
+              Secure portal for trade licence, bank statements, and prior
+              financial records.
+            </p>
+          </div>
+          <div class="pstep rv d3">
+            <div class="ps-n">4</div>
+            <h4>System Setup</h4>
+            <p>
+              Cloud accounting configured, chart of accounts built, opening
+              balances entered.
+            </p>
+          </div>
+          <div class="pstep rv d4">
+            <div class="ps-n">5</div>
+            <h4>Go Live</h4>
+            <p>
+              Ongoing monthly service begins — books maintained, compliance
+              handled.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="sec sec-alt">
+      <div class="wrap">
+        <div style="text-align: center" class="rv">
+          <div class="label" style="justify-content: center">
+            Transparent Pricing
+          </div>
+          <h2 style="text-align: center">
+            Simple, Fixed <em>Monthly Fees</em>
+          </h2>
+          <p class="lead" style="margin: 14px auto 0; text-align: center">
+            No hourly billing. No hidden costs. All prices shown exclude 5% UAE
+            VAT.
+          </p>
+        </div>
+        <div class="pr-grid">
+          <div class="pcard rv">
+            <div class="pr-tier">Starter</div>
+            <p class="pr-desc">
+              Ideal for startups and sole proprietors with straightforward
+              finances.
+            </p>
+            <div class="pr-amt">
+              <span class="pr-cur">AED</span><span class="pr-n">999</span>
+            </div>
+            <div class="pr-per">per month</div>
+            <div class="pr-note">Best for businesses under AED 2M turnover</div>
+            <div class="pr-div"></div>
+            <ul class="pr-feats">
+              <li>Monthly bookkeeping (up to 100 transactions)</li>
+              <li>Bank reconciliation</li>
+              <li>Monthly P&amp;L &amp; Balance Sheet</li>
+              <li>Xero / QuickBooks setup &amp; management</li>
+              <li>VAT return filing — quarterly</li>
+              <li>WPS payroll for up to 3 staff</li>
+              <li class="na">Corporate Tax filing</li>
+              <li class="na">ESR reporting</li>
+              <li class="na">CFO Advisory sessions</li>
+            </ul>
+            <a href="#contact" class="btn btn-o">Get Started</a>
+          </div>
+          <div class="pcard pop rv d1">
+            <div class="pop-lbl">Most Popular</div>
+            <div class="pr-tier">Growth</div>
+            <p class="pr-desc">
+              For growing SMEs with a team up to 20 and active compliance needs.
+            </p>
+            <div class="pr-amt">
+              <span class="pr-cur">AED</span><span class="pr-n">1,999</span>
+            </div>
+            <div class="pr-per">per month</div>
+            <div class="pr-note">Best for businesses AED 2M – 15M turnover</div>
+            <div class="pr-div"></div>
+            <ul class="pr-feats">
+              <li>Monthly bookkeeping (up to 500 transactions)</li>
+              <li>Bank reconciliation &amp; cash flow report</li>
+              <li>Full management accounts pack</li>
+              <li>Cloud accounting software management</li>
+              <li>VAT return &amp; all FTA correspondence</li>
+              <li>WPS payroll for up to 20 staff</li>
+              <li>Corporate Tax registration &amp; annual filing</li>
+              <li>ESR notification &amp; annual report</li>
+              <li class="na">Dedicated CFO Advisory</li>
+            </ul>
+            <a href="#contact" class="btn btn-g">Get Started</a>
+          </div>
+          <div class="pcard rv d2">
+            <div class="pr-tier">Enterprise</div>
+            <p class="pr-desc">
+              Full-service financial management for established, growing
+              businesses.
+            </p>
+            <div class="pr-amt">
+              <span class="pr-cur">AED</span><span class="pr-n">3,999</span>
+            </div>
+            <div class="pr-per">per month</div>
+            <div class="pr-note">Best for businesses AED 15M+ turnover</div>
+            <div class="pr-div"></div>
+            <ul class="pr-feats">
+              <li>Unlimited transaction bookkeeping</li>
+              <li>Multi-entity / multi-currency support</li>
+              <li>Consolidated group reporting</li>
+              <li>Full cloud accounting suite</li>
+              <li>VAT, CT &amp; ESR — complete compliance</li>
+              <li>Unlimited payroll processing</li>
+              <li>Transfer pricing documentation</li>
+              <li>UBO register maintenance</li>
+              <li>Monthly CFO Advisory (4 hrs/month)</li>
+            </ul>
+            <a href="#contact" class="btn btn-o">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="sec">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="rv">
+            <div class="aqc">
+              <p class="aq-text">
+                "We believe every UAE SME deserves the same financial rigour as
+                a listed corporation — without the enterprise price tag."
+              </p>
+              <div class="aq-auth">
+                — Founding Partners, Compliance Accountants
+              </div>
+            </div>
+            <div class="ab-row">
+              <div class="ab-s">
+                <strong>250+</strong><span>Clients Served</span>
+              </div>
+              <div class="ab-s">
+                <strong>AED 2B+</strong><span>Revenue Managed</span>
+              </div>
+              <div class="ab-s">
+                <strong>0</strong><span>FTA Penalties</span>
+              </div>
+            </div>
+          </div>
+          <div class="rv d2">
+            <div class="label">About Us</div>
+            <h2>Our <em>Story</em></h2>
+            <p class="ab-body">
+              Compliance Accountants was founded by ACCA and ICAEW-qualified
+              accountants who identified a clear gap: UAE SMEs were being
+              underserved by generic bookkeeping firms that lacked real
+              regulatory depth, while large firms weren't interested in smaller
+              clients.
+            </p>
+            <p class="ab-body">
+              We built this practice specifically for the UAE's fast-growing SME
+              sector — combining international accounting standards with deep
+              on-the-ground knowledge of UAE company law, FTA requirements, and
+              free zone regulations.
+            </p>
+            <div class="av-list">
+              <div class="av">
+                <div class="av-ico">⚖️</div>
+                <div>
+                  <h4>Integrity First</h4>
+                  <p>
+                    We only recommend structures we'd be comfortable defending
+                    before the FTA — every time.
+                  </p>
+                </div>
+              </div>
+              <div class="av">
+                <div class="av-ico">🎯</div>
+                <div>
+                  <h4>Precision in Everything</h4>
+                  <p>
+                    Every figure verified. Every filing reviewed by a senior
+                    accountant before submission.
+                  </p>
+                </div>
+              </div>
+              <div class="av">
+                <div class="av-ico">🔔</div>
+                <div>
+                  <h4>Proactive, Not Reactive</h4>
+                  <p>
+                    We flag issues before they become problems — not after the
+                    deadline has passed.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TEAM -->
+        <!-- <div class="tm-hd rv" style="margin-top:76px">
+      <div class="label" style="justify-content:center;margin-bottom:10px">Our People</div>
+      <h2 style="text-align:center">Meet the <em>Team</em></h2>
+    </div>
+    <div class="tm-grid">
+      <div class="tcard rv"><div class="tav">AK</div><div class="tname">Ahmed Al-Khalidi</div><div class="trole">Managing Partner</div><div class="tqual">ACCA · FTA Registered Tax Agent<br>15 years UAE experience</div></div>
+      <div class="tcard rv d1"><div class="tav">SR</div><div class="tname">Sarah Ramirez</div><div class="trole">Head of Compliance</div><div class="tqual">ICAEW · CTA (UAE)<br>VAT &amp; CT Specialist</div></div>
+      <div class="tcard rv d2"><div class="tav">OM</div><div class="tname">Omar Mansouri</div><div class="trole">Senior Tax Advisor</div><div class="tqual">ACCA · VAT Specialist<br>Free Zone Expert</div></div>
+      <div class="tcard rv d3"><div class="tav">PL</div><div class="tname">Priya Lakhani</div><div class="trole">Head of Bookkeeping</div><div class="tqual">CA (India) · Xero Certified<br>Cloud Accounting Expert</div></div>
+    </div> -->
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="sec sec-alt">
+      <div class="wrap">
+        <div style="text-align: center" class="rv">
+          <div class="label" style="justify-content: center">
+            Client Stories
+          </div>
+          <h2 style="text-align: center">What Our <em>Clients Say</em></h2>
+        </div>
+        <div class="tst-grid">
+          <div class="tst rv">
+            <div class="tst-stars">★★★★★</div>
+            <p class="tst-txt">
+              "Switching to Compliance Accountants was the best decision we made
+              in 2023. Our VAT filings are always on time, and they flagged a
+              corporate tax issue we had no idea existed."
+            </p>
+            <div class="tst-div"></div>
+            <div class="tst-au">
+              <div class="tst-ini">KA</div>
+              <div>
+                <div class="tst-name">Khalid Al-Rashidi</div>
+                <div class="tst-co">
+                  CEO, Al-Rashidi Trading LLC — Dubai Mainland
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tst rv d1">
+            <div class="tst-stars">★★★★★</div>
+            <p class="tst-txt">
+              "As a DMCC company with multi-currency transactions, we needed
+              real specialists. Their team understood our free zone requirements
+              from day one and cleaned up 2 years of messy books."
+            </p>
+            <div class="tst-div"></div>
+            <div class="tst-au">
+              <div class="tst-ini">JT</div>
+              <div>
+                <div class="tst-name">James Thompson</div>
+                <div class="tst-co">MD, Vertex Trading DMCC — Dubai</div>
+              </div>
+            </div>
+          </div>
+          <div class="tst rv d2">
+            <div class="tst-stars">★★★★★</div>
+            <p class="tst-txt">
+              "The CFO advisory has been invaluable. We finally have proper
+              KPIs, a realistic budget, and financial reporting that actually
+              helps us make decisions. Worth every dirham."
+            </p>
+            <div class="tst-div"></div>
+            <div class="tst-au">
+              <div class="tst-ini">NB</div>
+              <div>
+                <div class="tst-name">Nadia Berkani</div>
+                <div class="tst-co">Founder, Studio Berkani — DIFC</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="sec">
+      <div class="wrap">
+        <div style="text-align: center" class="rv">
+          <div class="label" style="justify-content: center">FAQ</div>
+          <h2 style="text-align: center">
+            Frequently Asked <em>Questions</em>
+          </h2>
+        </div>
+        <div class="faq-w rv">
+          <div class="fq">
+            <button class="fq-btn" onclick="faq(this)">
+              <span class="fq-txt"
+                >Does my UAE business need to register for VAT?</span
+              >
+              <div class="fq-ic">+</div>
+            </button>
+            <div class="fq-body">
+              <div class="fq-bi">
+                If your taxable supplies and imports exceed AED 375,000 per
+                annum, VAT registration is mandatory. Voluntary registration is
+                available if supplies exceed AED 187,500. We assess your
+                turnover and advise on the correct threshold and timing —
+                getting this wrong results in FTA penalties and backdated VAT
+                liability.
+              </div>
+            </div>
+          </div>
+          <div class="fq">
+            <button class="fq-btn" onclick="faq(this)">
+              <span class="fq-txt"
+                >When does UAE Corporate Tax apply to my business?</span
+              >
+              <div class="fq-ic">+</div>
+            </button>
+            <div class="fq-body">
+              <div class="fq-bi">
+                UAE Corporate Tax at 9% applies to most UAE businesses for
+                financial years starting on or after 1 June 2023. The first AED
+                375,000 of taxable income is taxed at 0%. Qualifying Free Zone
+                businesses may benefit from the 0% preferential rate on
+                qualifying income. We determine which rate applies and handle
+                all registration and filing.
+              </div>
+            </div>
+          </div>
+          <div class="fq">
+            <button class="fq-btn" onclick="faq(this)">
+              <span class="fq-txt">What accounting software do you use?</span>
+              <div class="fq-ic">+</div>
+            </button>
+            <div class="fq-body">
+              <div class="fq-bi">
+                We are certified partners of Xero, QuickBooks Online, and Zoho
+                Books — the three most widely used cloud platforms in the UAE.
+                We can onboard you onto any of these or continue within your
+                existing system. We also support Tally ERP. Our team handles all
+                setup, chart of accounts configuration, and ongoing management.
+              </div>
+            </div>
+          </div>
+          <div class="fq">
+            <button class="fq-btn" onclick="faq(this)">
+              <span class="fq-txt"
+                >Can you handle accounting for a Free Zone company?</span
+              >
+              <div class="fq-ic">+</div>
+            </button>
+            <div class="fq-body">
+              <div class="fq-bi">
+                Absolutely — Free Zone accounting is one of our specialisms. We
+                serve clients in DMCC, DIFC, ADGM, JAFZA, SAIF Zone, RAK ICC,
+                and most major UAE Free Zones. Each zone has specific audit,
+                reporting, and licence renewal requirements. We ensure your
+                books meet both the Free Zone authority's standards and UAE
+                federal tax obligations.
+              </div>
+            </div>
+          </div>
+          <div class="fq">
+            <button class="fq-btn" onclick="faq(this)">
+              <span class="fq-txt"
+                >How quickly can you onboard my business?</span
+              >
+              <div class="fq-ic">+</div>
+            </button>
+            <div class="fq-body">
+              <div class="fq-bi">
+                In most cases we have cloud accounting set up and the first
+                month of bookkeeping started within 5 business days of signing.
+                For businesses with complex historical records or backlog
+                bookkeeping, we agree a clear timeline upfront. We never rush
+                onboarding at the expense of accuracy — your opening balances
+                must be right.
+              </div>
+            </div>
+          </div>
+          <div class="fq">
+            <button class="fq-btn" onclick="faq(this)">
+              <span class="fq-txt">Are your fees inclusive of VAT?</span>
+              <div class="fq-ic">+</div>
+            </button>
+            <div class="fq-body">
+              <div class="fq-bi">
+                All prices shown are exclusive of 5% UAE VAT, which will be
+                added to your invoice. As a VAT-registered business, you can
+                reclaim the input VAT on our fees in your own quarterly VAT
+                return — making the effective net cost lower for most clients.
+                We are always transparent about the total fee before you commit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section id="cta-band">
+      <div class="wrap">
+        <div class="cta-in rv">
+          <div class="label" style="justify-content: center">
+            Ready to Start
+          </div>
+          <h2>Take Control of Your<br /><em>Financial Compliance</em></h2>
+          <p>
+            Book a free 30-minute consultation. No obligation, no sales
+            pressure.
+          </p>
+          <div class="cta-acts">
+            <a href="#contact" class="btn btn-gold">Book Free Consultation</a>
+            <a href="tel:+97144000000" class="btn btn-ghost"
+              >Call +971 4 400 0000</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="sec">
+      <div class="wrap">
+        <div class="con-grid">
+          <div class="rv">
+            <div class="label">Get in Touch</div>
+            <h2>Let's Talk About<br /><em>Your Business</em></h2>
+            <p class="lead">
+              Reach out for a free consultation or any question. We respond
+              within 4 working hours.
+            </p>
+            <div class="cd-list">
+              <div class="cdi">
+                <div class="cdi-ico">📍</div>
+                <div class="cdi-tx">
+                  <strong>Office Address</strong
+                  ><span
+                    >Office 2204, HDS Business Centre<br />JLT Cluster M, Dubai,
+                    UAE</span
+                  >
+                </div>
+              </div>
+              <div class="cdi">
+                <div class="cdi-ico">📞</div>
+                <div class="cdi-tx">
+                  <strong>Phone &amp; WhatsApp</strong
+                  ><span>+971 4 400 0000<br />+971 50 123 4567</span>
+                </div>
+              </div>
+              <div class="cdi">
+                <div class="cdi-ico">✉️</div>
+                <div class="cdi-tx">
+                  <strong>Email</strong
+                  ><span
+                    >hello@complianceaccountants.ae<br />tax@complianceaccountants.ae</span
+                  >
+                </div>
+              </div>
+              <div class="cdi">
+                <div class="cdi-ico">🕐</div>
+                <div class="cdi-tx">
+                  <strong>Office Hours</strong
+                  ><span
+                    >Monday – Friday: 8:30am – 6:00pm<br />Saturday: 9:00am –
+                    1:00pm</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rv d1">
+            <div class="cf-card">
+              <h3 class="cf-ttl">Book a Free Consultation</h3>
+              <p class="cf-sub">
+                A senior accountant will contact you within 4 working hours.
+              </p>
+              <div class="frow">
+                <div class="fg">
+                  <label>First Name</label
+                  ><input type="text" placeholder="Ahmed" id="fn" />
+                </div>
+                <div class="fg">
+                  <label>Last Name</label
+                  ><input type="text" placeholder="Al-Khalidi" id="ln" />
+                </div>
+              </div>
+              <div class="fg">
+                <label>Business Email</label
+                ><input
+                  type="email"
+                  placeholder="ahmed@yourcompany.ae"
+                  id="em"
+                />
+              </div>
+              <div class="frow">
+                <div class="fg">
+                  <label>Phone / WhatsApp</label
+                  ><input type="tel" placeholder="+971 50 000 0000" id="ph" />
+                </div>
+                <div class="fg">
+                  <label>Company Name</label
+                  ><input type="text" placeholder="Your Company LLC" id="co" />
+                </div>
+              </div>
+              <div class="fg">
+                <label>Business Setup Type</label>
+                <select id="bz">
+                  <option value="">Select your setup</option>
+                  <option>Dubai Mainland LLC</option>
+                  <option>
+                    Free Zone Company (DMCC / DIFC / JAFZA / other)
+                  </option>
+                  <option>Abu Dhabi Mainland</option>
+                  <option>Abu Dhabi Free Zone (ADGM / KIZAD)</option>
+                  <option>Sharjah / Northern Emirates</option>
+                  <option>Sole Proprietorship / Civil Company</option>
+                  <option>Branch of Foreign Company</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label>Service Required</label>
+                <select id="sv">
+                  <option value="">Select primary service</option>
+                  <option>Bookkeeping &amp; Monthly Accounts</option>
+                  <option>VAT Registration &amp; Filing</option>
+                  <option>Corporate Tax Compliance</option>
+                  <option>Payroll Management</option>
+                  <option>Financial Reporting</option>
+                  <option>CFO Advisory</option>
+                  <option>Full Package — All Services</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label>Message (Optional)</label
+                ><textarea
+                  placeholder="Tell us about your current situation or any specific requirements..."
+                  id="mg"
+                ></textarea>
+              </div>
+              <button class="btn btn-g fsub" onclick="sendForm()">
+                Send Enquiry — It's Free ↗
+              </button>
+              <p class="fnote">
+                By submitting this form you agree to our Privacy Policy. We
+                never share your information with third parties.
+              </p>
+              <div class="ok-msg" id="okMsg">
+                ✓ Thank you! A senior accountant will contact you within 4
+                working hours.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="wrap">
+        <div class="ft-top">
+          <div class="ft-brand">
+            <div class="ft-logo">
+              <div class="ft-lm">CA</div>
+              <strong>Compliance Accountants</strong>
+            </div>
+            <p>
+              Specialist accounting and bookkeeping for UAE SMEs. ACCA &amp;
+              ICAEW qualified. FTA Registered Tax Agents serving all 7 Emirates.
+            </p>
+            <div class="ft-certs">
+              <span class="ft-cert">ACCA</span>
+              <span class="ft-cert">ICAEW</span>
+              <span class="ft-cert">FTA Registered</span>
+              <span class="ft-cert">Xero Partner</span>
+              <span class="ft-cert">QB Certified</span>
+            </div>
+          </div>
+          <div class="ft-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#services">Bookkeeping</a></li>
+              <li><a href="#services">VAT Compliance</a></li>
+              <li><a href="#services">Corporate Tax</a></li>
+              <li><a href="#services">Payroll</a></li>
+              <li><a href="#services">Financial Reporting</a></li>
+              <li><a href="#services">CFO Advisory</a></li>
+            </ul>
+          </div>
+          <div class="ft-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#about">Our Team</a></li>
+              <li><a href="#testimonials">Clients</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#faq">FAQs</a></li>
+              <li><a href="#contact">Careers</a></li>
+            </ul>
+          </div>
+          <div class="ft-col">
+            <h5>Contact</h5>
+            <ul>
+              <li><a href="tel:+971589062550">+971589062550</a></li>
+              <li>
+                <a href="mailto:contact@complianceaccountants.com"
+                  >contact@complianceaccountants.com</a
+                >
+              </li>
+              <li><a href="#">JLT Cluster M, Dubai</a></li>
+              <li><a href="#">WhatsApp Us</a></li>
+              <!-- <li><a href="#">LinkedIn</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="ft-btm">
+          <p class="ft-copy">
+            © 2025 Compliance Accountants. All rights reserved. Trade Licence:
+            DED-XXXXXXX | complianceaccountants.ae
+          </p>
+          <div class="ft-legal">
+            <a href="#">Privacy Policy</a><a href="#">Terms of Service</a
+            ><a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // CURSOR
+      const c1 = document.getElementById("c1"),
+        c2 = document.getElementById("c2");
+      let mx = 0,
+        my = 0,
+        rx = 0,
+        ry = 0;
+      document.addEventListener("mousemove", (e) => {
+        mx = e.clientX;
+        my = e.clientY;
+        c1.style.left = mx + "px";
+        c1.style.top = my + "px";
+      });
+      (function a() {
+        rx += (mx - rx) * 0.13;
+        ry += (my - ry) * 0.13;
+        c2.style.left = rx + "px";
+        c2.style.top = ry + "px";
+        requestAnimationFrame(a);
+      })();
+      document
+        .querySelectorAll("a,button,.scard,.pcard,.tcard,.tst")
+        .forEach((el) => {
+          el.addEventListener("mouseenter", () => {
+            c2.style.transform = "translate(-50%,-50%) scale(2)";
+            c2.style.opacity = ".22";
+          });
+          el.addEventListener("mouseleave", () => {
+            c2.style.transform = "translate(-50%,-50%) scale(1)";
+            c2.style.opacity = ".5";
+          });
+        });
+
+      // NAV
+      window.addEventListener("scroll", () =>
+        document.getElementById("nav").classList.toggle("up", scrollY > 50),
+      );
+      function toggleNav() {
+        document.getElementById("drawer").classList.toggle("on");
+      }
+
+      // FAQ
+      function faq(btn) {
+        const item = btn.closest(".fq"),
+          was = item.classList.contains("on");
+        document
+          .querySelectorAll(".fq.on")
+          .forEach((i) => i.classList.remove("on"));
+        if (!was) item.classList.add("on");
+      }
+
+      // REVEAL
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in");
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".rv").forEach((el) => obs.observe(el));
+
+      // SMOOTH SCROLL
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const t = document.querySelector(a.getAttribute("href"));
+          if (t) {
+            e.preventDefault();
+            t.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+
+      // FORM
+      function sendForm() {
+        const fn = document.getElementById("fn").value.trim();
+        const em = document.getElementById("em").value.trim();
+        if (!fn || !em) {
+          alert("Please enter your name and email to proceed.");
+          return;
+        }
+        document.getElementById("okMsg").style.display = "block";
+        ["fn", "ln", "em", "ph", "co", "mg"].forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) el.value = "";
+        });
+        ["bz", "sv"].forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) el.selectedIndex = 0;
+        });
+      }
+
+      // CHAT
+      function toggleChat() {
+        const p = document.getElementById("chatPanel");
+        p.classList.toggle("open");
+        const notif = document.querySelector(".chat-notif");
+        if (notif) notif.style.display = "none";
+      }
+      function chatSend(btn) {
+        const input = document.getElementById("chatInput");
+        const msg = btn ? btn.textContent : input.value.trim();
+        if (!msg) return;
+        if (btn) btn.style.opacity = "0.5";
+        else input.value = "";
+        setTimeout(() => {
+          window.open(
+            "https://wa.me/97150123456?text=" + encodeURIComponent(msg),
+            "_blank",
+          );
+        }, 300);
+      }
+      document
+        .getElementById("chatInput")
+        .addEventListener("keydown", function (e) {
+          if (e.key === "Enter") chatSend();
+        });
+    </script>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <!-- <a class="wa-btn" href="https://wa.me/97150123456?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20accounting%20services" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <div class="wa-tooltip">Chat with us on WhatsApp</div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.557 4.126 1.532 5.864L.057 23.428a.5.5 0 0 0 .609.61l5.7-1.453A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.655-.52-5.17-1.427l-.371-.22-3.838.979.999-3.728-.242-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+  </svg>
+</a> -->
+
+    <!-- GOOGLE REVIEWS BADGE -->
+    <!-- <div class="gr-badge" onclick="window.open('https://maps.google.com','_blank')" title="See our Google Reviews">
+  <div class="gr-logo">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+    </svg>
+  </div>
+  <div class="gr-info">
+    <div class="gr-stars">
+      <svg viewBox="0 0 20 20"><path d="M10 1l2.39 6.26H19l-5.19 4.02 1.99 6.26L10 14.27l-5.8 3.27 1.99-6.26L1 7.26h6.61z"/></svg>
+      <svg viewBox="0 0 20 20"><path d="M10 1l2.39 6.26H19l-5.19 4.02 1.99 6.26L10 14.27l-5.8 3.27 1.99-6.26L1 7.26h6.61z"/></svg>
+      <svg viewBox="0 0 20 20"><path d="M10 1l2.39 6.26H19l-5.19 4.02 1.99 6.26L10 14.27l-5.8 3.27 1.99-6.26L1 7.26h6.61z"/></svg>
+      <svg viewBox="0 0 20 20"><path d="M10 1l2.39 6.26H19l-5.19 4.02 1.99 6.26L10 14.27l-5.8 3.27 1.99-6.26L1 7.26h6.61z"/></svg>
+      <svg viewBox="0 0 20 20"><path d="M10 1l2.39 6.26H19l-5.19 4.02 1.99 6.26L10 14.27l-5.8 3.27 1.99-6.26L1 7.26h6.61z"/></svg>
+    </div>
+    <span class="gr-score">5.0 <span style="font-weight:400;font-size:11px;color:#486056">Google Rating</span></span>
+    <span class="gr-count">Based on 47 reviews</span>
+  </div>
+</div> -->
+
+    <!-- LIVE CHAT BUBBLE -->
+    <div class="chat-bubble" id="chatBubble">
+      <div class="chat-panel" id="chatPanel">
+        <div class="chat-head">
+          <div class="chat-avatar">SA</div>
+          <div class="chat-head-info">
+            <div class="chat-head-name">Sarah — Compliance Accountants</div>
+            <div class="chat-head-status">
+              <span class="chat-status-dot"></span> Online now · Typically
+              replies in minutes
+            </div>
+          </div>
+          <button
+            class="chat-close-btn"
+            onclick="toggleChat()"
+            aria-label="Close chat"
+          >
+            ✕
+          </button>
+        </div>
+        <div class="chat-body">
+          <div class="chat-msg">
+            👋 Hi there! I'm Sarah from <strong>Compliance Accountants</strong>.
+            How can we help your UAE business today?
+          </div>
+          <div class="chat-quick-label">Quick questions</div>
+          <div class="chat-quick">
+            <button class="chat-quick-btn" onclick="chatSend(this)">
+              💼 I need VAT registration help
+            </button>
+            <button class="chat-quick-btn" onclick="chatSend(this)">
+              📊 What are your monthly fees?
+            </button>
+            <button class="chat-quick-btn" onclick="chatSend(this)">
+              🏢 Corporate Tax compliance query
+            </button>
+            <button class="chat-quick-btn" onclick="chatSend(this)">
+              📞 Request a callback
+            </button>
+          </div>
+          <div class="chat-input-row">
+            <input
+              class="chat-input"
+              id="chatInput"
+              type="text"
+              placeholder="Type your message..."
+            />
+            <button class="chat-send" onclick="chatSend()" aria-label="Send">
+              <svg viewBox="0 0 24 24">
+                <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <button class="chat-toggle" onclick="toggleChat()" aria-label="Open chat">
+        <span class="chat-notif">1</span>
+        <svg
+          id="chatIcon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
